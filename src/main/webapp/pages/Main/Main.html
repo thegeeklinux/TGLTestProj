@@ -1,11 +1,24 @@
-<wm-page data-ng-controller="MainPageController" name="mainpage" pagetitle="Main">
-    <wm-header content="header" name="header" height="auto"></wm-header>
-    <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
-    <wm-content name="content">
-        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-        <wm-page-content columnwidth="8" paddingleft="15" paddingright="15" name="mainContent">
+<wm-page name="page1" data-ng-controller="MainPageController">
+    <wm-header name="header1" content="header"></wm-header>
+    <wm-content name="content1">
+        <wm-page-content name="page_content1" columnwidth="12">
+            <wm-layoutgrid name="layoutgrid21">
+                <wm-gridrow name="gridrow39_3">
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn1_1" padding="unset 1em 1em 1em">
+                        <wm-tile name="tile1" borderstyle="solid" bordercolor="#e8e8e8" borderwidth="1px">
+                            <wm-layoutgrid name="layoutgrid1">
+                                <wm-gridrow height="500" name="gridrow1">
+                                    <wm-gridcolumn columnwidth="3" name="gridcolumn1" horizontalalign="left" class="col-xs-12" padding=".5em"></wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="5" name="gridcolumn2" class="col-xs-12" padding=".5em 1em">
+                                        <wm-label animation="bounceInUp" horizontalalign="center" caption="Welcome To TheGeekLinux" class="h2" fontweight="bold" name="label1" margin="0em unset unset unset"></wm-label>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                            </wm-layoutgrid>
+                        </wm-tile>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
         </wm-page-content>
-        <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>
-    <wm-footer name="footer" content="footer"></wm-footer>
+    <wm-footer name="footer1" content="footer"></wm-footer>
 </wm-page>
